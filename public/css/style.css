@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+header {
+  background: rgb(29, 29, 29);
+  padding: 20px;
+  text-align: right;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+}
+
+footer {
+  background: rgb(43, 10, 10);
+  text-align: right;
+  color: white;
+  flex-grow: 0;
+  padding-right: 30px;
+  /* position: absolute;
+    width: 100%;
+    bottom: 0px; */
+}
+
+main {
+  flex-grow: 1;
+  margin: 0px 10%;
+  /* overflow-y: auto; */
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(29, 29, 29),
+    rgb(43, 10, 10)
+  );
+}
+
+input {
+  border: 1px solid #888;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background: #888;
+  border: 1px solid #888;
+  padding: 8px;
+}
