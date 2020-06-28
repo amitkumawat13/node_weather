@@ -5,6 +5,7 @@ const hbs = require("hbs");
 const forCast = require("./utils/forcaste");
 const geoCode = require("./utils/geocode");
 const say = console.log;
+const port = process.env.PORT || 3000;
 
 //define paths for express config
 const pubFolder = path.join(__dirname, "../public");
