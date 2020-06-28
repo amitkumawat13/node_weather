@@ -18,9 +18,7 @@ weatherForm.addEventListener('submit',(e) => {
         msg1.textContent =''
          msg2.textContent = detail.error;
       } else {
-          msg1.textContent = `
-          Weather from ${detail.placeName},
-          where temperture is ${detail.temperature} and its feels like ${detail.weather_descriptions[0]} `;
+          msg1.textContent = detail.info;
       }
   });
 });

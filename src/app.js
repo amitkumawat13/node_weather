@@ -50,9 +50,9 @@ app.get("/weather", (req, res) => {
   
   geoCode(req.query.address,(err,{mapcord,placeName} = {}) => {
     if(err) return res.send({error:'error in getting cords'});
-    forCast(mapcord,(err, {weather_descriptions, temperature ,feelslike} = {}) => {
+    forCast(mapcord,(err, {weather_descriptions, temperature ,feelslike ,humidity} = {}) => {
       res.send({
-        weather_descriptions, temperature ,feelslike,placeName
+        info : `${weather_descriptions[0]} Weather in ${placeName}, Having temperture ${temperature} but feels like ${feelslike} with humidity of ${humidity}. `
       })
     })
   })
